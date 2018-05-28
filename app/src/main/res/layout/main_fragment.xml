@@ -25,17 +25,18 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <LinearLayout
-        android:id="@+id/view"
+        android:id="@+id/pseudoButton"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
         android:background="@drawable/bg"
         android:clickable="true"
         android:foreground="@drawable/ripple"
         android:orientation="vertical"
         android:padding="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/pseudoButton2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
         tools:layout_editor_absoluteX="16dp">
@@ -52,6 +53,37 @@
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
             android:text="Subtitle"
+            android:textSize="18dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pseudoButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg"
+        android:clickable="true"
+        android:foreground="@drawable/ripple"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/pseudoButton"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Another"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="extra stuff"
             android:textSize="18dp"/>
     </LinearLayout>
 
